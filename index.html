@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إيطاليانو | فرايد تشيكن وبيتزا</title>
+<meta name="description" content="إيطاليانو — فرايد تشيكن، بيتزا، فطير وأكثر. اطلب أونلاين من أقرب فرع إليك.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================== الهيدر ============================== -->
+<header class="site-header">
+  <div class="container header-bar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="23" fill="#a41f28"/>
+          <path d="M24 10c5 0 8 4 8 9 0 3-1.5 5.5-3.5 7.2 3 .6 5 2.6 5 5.3 0 3-3 5.5-9.5 5.5s-9.5-2.5-9.5-5.5c0-2.7 2-4.7 5-5.3C17.5 24.5 16 22 16 19c0-5 3-9 8-9Z" fill="#f6efdd"/>
+          <circle cx="27" cy="17" r="1.4" fill="#a41f28"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong>إيطاليانو</strong>
+        <span>FRIED CHICKEN &amp; PIZZA</span>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="menu.html">المنيو</a>
+      <a href="index.html#about">عن المطعم</a>
+      <a href="index.html#branches">الفروع</a>
+      <a href="cart.html">السلة</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="cart.html" class="cart-btn">
+        <span data-icon="cart"></span>
+        <span class="label">السلة</span>
+        <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="فتح القائمة" data-icon="menu"></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== الهيرو ============================== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="hero-eyebrow"><span class="rule"></span> ملوي · ديرمواس · نادي الحياة</div>
+      <h1>طعم إيطالي أصلي<br>على <em>الطريقة المصرية</em></h1>
+      <p class="hero-sub">فرايد تشيكن مقرمش، بيتزا طازجة من الفرن، وفطير بلدي بطعم البيت — كل ده من إيطاليانو، وبيوصلك في دقائق من أقرب فرع.</p>
+      <div class="hero-actions">
+        <a href="menu.html" class="btn btn-gold">تصفح المنيو</a>
+        <a href="menu.html" class="btn btn-outline">اطلب الآن</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>٣</strong><span>فروع بالمنيا</span></div>
+        <div><strong>+٢٠</strong><span>تصنيف أطباق</span></div>
+        <div><strong>١٥</strong><span>دقيقة تحضير</span></div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- ============================== عن المطعم ============================== -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-figure"><span data-icon="chef"></span></div>
+    <div class="about-copy">
+      <div class="section-kicker"><span class="rule"></span> قصتنا</div>
+      <h2>مطبخ إيطالي بروح مصرية</h2>
+      <p>بدأت إيطاليانو كفكرة بسيطة: نجمع بين مقرمشية الفرايد تشيكن الأمريكي وطزاجة البيتزا الإيطالية، ونقدمهم بجودة ثابتة وسعر عادل لكل بيت في ملوي.</p>
+      <p>كل قطعة دجاج بتتغسل وتتتبل وتتقلى طازة وقت الطلب، والعجينة بتتحضر يوميًا في الفروع الثلاثة تحت إشراف الشيف علي صبري.</p>
+      <div class="about-facts">
+        <div class="fact"><strong>2019</strong><span>سنة التأسيس</span></div>
+        <div class="fact"><strong>+50</strong><span>صنف بالمنيو</span></div>
+        <div class="fact"><strong>4.8</strong><span>تقييم العملاء</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== الفروع ============================== -->
+<section class="section branches-section" id="branches">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker" style="color:var(--gold-2)"><span class="rule" style="background:var(--gold-2)"></span> قريب منك</div>
+        <h2 style="color:var(--paper)">فروعنا</h2>
+      </div>
+    </div>
+    <div class="branches-grid" id="branchesGrid"></div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<section class="section section-tight">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>جعان دلوقتي؟</h2>
+        <p>اطلب أونلاين وهيوصلك طلبك ساخن من أقرب فرع.</p>
+      </div>
+      <a href="menu.html" class="btn btn-gold">اطلب الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== الفوتر ============================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <strong>إيطاليانو</strong>
+        <p>فرايد تشيكن، بيتزا، فطير وكريب — بجودة ثابتة في كل فروعنا بالمنيا.</p>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="menu.html">المنيو</a></li>
+          <li><a href="cart.html">السلة</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <ul id="footerContacts"></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 إيطاليانو. جميع الحقوق محفوظة.</span>
+      <span>إدارة: الشيف علي صبري</span>
+      <span> للتواصل مع الشيف : 01270554004</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // ---- عرض الفروع ----//
+  function renderBranches(){
+    const branchesGrid = document.getElementById("branchesGrid");
+    branchesGrid.innerHTML = BRANCHES.map((b, i) => {
+      const open = isBranchOpenNow(b);
+      return `
+      <div class="branch-card">
+        <div class="branch-card-top">
+          <span class="num">0${i+1}</span>
+          <span class="branch-status ${open ? "is-open" : "is-closed"}">
+            <span class="dot"></span>${open ? "مفتوح الآن" : "مغلق دلوقتي"}
+          </span>
+        </div>
+        <h3 style="color:var(--paper)">${b.name}</h3>
+        <div class="branch-row">${iconSvg("location")}<span>${b.address}</span></div>
+<div class="branch-row">
+  ${iconSvg("phone")}
+  <div dir="ltr">
+    ${b.phone.join("<br>")}
+  </div>
+</div>        <div class="branch-row">${iconSvg("clock")}<span>${branchHoursLabel(b)}</span></div>
+      </div>`;
+    }).join(""); 
+  }
+  renderBranches();
+  setInterval(renderBranches, 60000); // تحديث الحالة تلقائيًا كل دقيقة
+
+  // ---- تواصل الفوتر ----
+ document.getElementById("footerContacts").innerHTML = BRANCHES.map(b => `
+  <li style="text-align:right;">
+    <strong>${b.name}</strong>
+
+    <div class="footer-phones" dir="ltr">
+      ${b.phone.map(phone => `<div>${phone}</div>`).join("")}
+    </div>
+  </li>
+`).join("");
+</script>
+</body>
+</html>
