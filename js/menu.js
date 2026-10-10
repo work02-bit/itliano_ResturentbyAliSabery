@@ -2,6 +2,36 @@
    ITALIANO — منطق صفحة المنيو
    ========================================================= */
 
+/* ---------------------------------------------------------
+   إعدادات الطلب (عدّل هنا بسهولة)
+   --------------------------------------------------------- */
+
+/* التصنيفات اللي فيها بروست وعايزين فيها اختيار (أوريجينال / اسبايسي).
+   ضيف أو شيل أي id من تصنيفات data.js (مثال: "strips-meals" للاستربس). */
+const SPICY_CATEGORIES = ["mix-boxes", "fried-boxes", "family-boxes", "kids-meals","strips-meals"];
+const SPICY_OPTIONS = ["أوريجينال", "اسبايسي"];
+
+/* بيبني الاسم الكامل اللي بيروح السلة والفاتورة والواتساب:
+   اسم التصنيف + اسم الصنف  (مثال: "بيتزا إيطالى فراخ").
+   - لو عايز بادئة مختلفة لتصنيف، ضيف في data.js جوه التصنيف: orderPrefix: "..."
+     (أو orderPrefix: "" عشان يظهر اسم الصنف لوحده).
+   - لو اسم الصنف أصلًا فيه كلمة من اسم التصنيف (زي "كريب فراخ" في "الكريبات")
+     مبيتكررش الاسم. */
+function orderNamePrefix(cat, itemName){
+  if (cat.orderPrefix !== undefined) return cat.orderPrefix;
+  const stem = w => w.replace(/^ال/, "").replace(/(ات|ون|ين)$/, "");
+  const repeated = cat.name.split(/\s+/).some(w => {
+    const s = stem(w);
+    return s.length >= 3 && itemName.includes(s);
+  });
+  return repeated ? "" : cat.name;
+}
+
+function fullItemName(cat, item){
+  const prefix = orderNamePrefix(cat, item.n);
+  return prefix ? `${prefix} ${item.n}` : item.n;
+}
+
 function priceOf(item, size){
   if (typeof item.p === "number") return item.p;
   return item.p[size];
@@ -56,6 +86,14 @@ function productCard(cat, item, idx){
       ${sizeKeys.map(k => `<button type="button" class="size-btn ${k === defaultSize ? "active" : ""}" data-size="${k}">${SIZE_LABELS[k]}</button>`).join("")}
     </div>` : "";
 
+  // اختيار أوريجينال / اسبايسي (للتصنيفات المحددة في SPICY_CATEGORIES فقط)
+  const hasSpicy = SPICY_CATEGORIES.includes(cat.id);
+  const defaultVariant = hasSpicy ? SPICY_OPTIONS[0] : "";
+  const variantPicker = hasSpicy ? `
+    <div class="size-picker variant-picker">
+      ${SPICY_OPTIONS.map(v => `<button type="button" class="size-btn ${v === defaultVariant ? "active" : ""}" data-variant="${v}">${v}</button>`).join("")}
+    </div>` : "";
+
   const mediaStyle = item.img ? ` style="background-image:url('${item.img}')"` : "";
   const mediaClass = item.img ? " has-photo" : "";
 
@@ -70,6 +108,7 @@ function productCard(cat, item, idx){
           <h3 class="product-name">${item.n}</h3>
         </div>
         ${item.d ? `<p class="product-desc">${item.d}</p>` : ""}
+        ${variantPicker}
         ${sizePicker}
         <div class="product-price-row">
           <span class="price" data-price-display>${price}</span>
@@ -77,7 +116,9 @@ function productCard(cat, item, idx){
         </div>
         <button class="add-btn" data-add
           data-cat-id="${cat.id}" data-cat-name="${cat.name}"
-          data-name="${item.n}" data-size="${defaultSize || ""}" data-price="${price}">
+          data-name="${item.n}" data-full-name="${fullItemName(cat, item)}"
+          data-variant="${defaultVariant}"
+          data-size="${defaultSize || ""}" data-price="${price}">
           ${iconSvg("plus")}<span>أضف</span>
         </button>
       </div>
@@ -102,9 +143,20 @@ function renderMenu(){
   `).join("") + `<div class="no-results" id="noResults" style="display:none">${iconSvg("empty")}<p>مفيش أصناف مطابقة للبحث</p></div>`;
 }
 
+/* --- تغيير النوع (أوريجينال / اسبايسي) داخل الكارت --- */
+document.addEventListener("click", (e) => {
+  const variantBtn = e.target.closest(".size-btn[data-variant]");
+  if (variantBtn){
+    variantBtn.closest(".variant-picker").querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
+    variantBtn.classList.add("active");
+    variantBtn.closest(".product-card").querySelector("[data-add]").dataset.variant = variantBtn.dataset.variant;
+    return;
+  }
+});
+
 /* --- تغيير المقاس داخل الكارت --- */
 document.addEventListener("click", (e) => {
-  const sizeBtn = e.target.closest(".size-btn");
+  const sizeBtn = e.target.closest(".size-btn[data-size]");
   if (sizeBtn){
     const picker = sizeBtn.closest(".size-picker");
     picker.querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
@@ -123,15 +175,18 @@ document.addEventListener("click", (e) => {
 
   const addBtn = e.target.closest("[data-add]");
   if (addBtn){
+    // الاسم اللي هيظهر في السلة والفاتورة والواتساب: التصنيف + الصنف (+ النوع لو فيه)
+    const variant = addBtn.dataset.variant;
+    const orderName = variant ? `${addBtn.dataset.fullName} (${variant})` : addBtn.dataset.fullName;
     Cart.add({
       catId: addBtn.dataset.catId,
       catName: addBtn.dataset.catName,
-      name: addBtn.dataset.name,
+      name: orderName,
       size: addBtn.dataset.size || null,
       unitPrice: Number(addBtn.dataset.price),
       qty: 1
     });
-    showToast(`تمت إضافة "${addBtn.dataset.name}" للسلة`, "cart");
+    showToast(`تمت إضافة "${orderName}" للسلة`, "cart");
     addBtn.classList.add("added");
     addBtn.innerHTML = `${iconSvg("check")}<span>تمت الإضافة</span>`;
     setTimeout(() => {
