@@ -106,11 +106,11 @@ const MENU = [
     name: "فرايد بوكس",
     icon: "drumstick",
     items: [
-      { n: "سناك بوكس", p: 110, d: "2 قطعة (صدر + جناح) أو (فخد + دبوس) +1 أرز + تومية +2 خبز + كاتشب + بطاطس" ,img:"assets/food/friedbox/snak.jpg"},
-      { n: "ميديام بوكس", p: 140, d: "3 قطع (صدر + فخد + جناح) +1 أرز + تومية +2 خبز + كاتشب + كول سلو",img:"assets/food/friedbox/med.jpg" },
-      { n: "دينر بوكس", p: 155, d: "3 قطع (صدر + فخد + دبوس) +1 أرز + تومية +2 خبز + كاتشب + كول سلو",img:"assets/food/friedbox/dinner.jpg" },
-      { n: "بيج بوكس", p: 200, d: "4 قطع (صدر + فخد + دبوس + جناح) +1 أرز +2 تومية +3 خبز + كاتشب + كول سلو",img:"assets/food/friedbox/big.jpg" },
-      { n: "بريك بوكس", p: 220, d: "5 قطع (صدر + فخد + دبوس + جناح + كيلة) +1 أرز +3 تومية +3 خبز + كاتشب +2 كول سلو",img:"assets/food/friedbox/photo_2026-09-10_21-05-39.jpg" }
+      { n: "سناك بوكس", p: 115, d: "2 قطعة (صدر + جناح) أو (فخد + دبوس) +1 أرز + تومية +2 خبز + كاتشب + بطاطس" ,img:"assets/food/friedbox/snak.jpg"},
+      { n: "ميديام بوكس", p: 145, d: "3 قطع (صدر + فخد + جناح) +1 أرز + تومية +2 خبز + كاتشب + كول سلو",img:"assets/food/friedbox/med.jpg" },
+      { n: "دينر بوكس", p: 165, d: "3 قطع (صدر + فخد + دبوس) +1 أرز + تومية +2 خبز + كاتشب + كول سلو",img:"assets/food/friedbox/dinner.jpg" },
+      { n: "بيج بوكس", p: 210, d: "4 قطع (صدر + فخد + دبوس + جناح) +1 أرز +2 تومية +3 خبز + كاتشب + كول سلو",img:"assets/food/friedbox/big.jpg" },
+      { n: "بريك بوكس", p: 235, d: "5 قطع (صدر + فخد + دبوس + جناح + كيلة) +1 أرز +3 تومية +3 خبز + كاتشب +2 كول سلو",img:"assets/food/friedbox/photo_2026-09-10_21-05-39.jpg" }
     ]
   },
   {
@@ -119,9 +119,9 @@ const MENU = [
     icon: "family",
     note: "للتجمعات الكبيرة",
     items: [
-      { n: "فاميلي بوكس", p: 395, d: "9 قطع (2صدر +2 فخد + 2 دبوس + 2 جناح + 1 كيلة) +2 أرز +3 تومية +5 خبز + بطاطس + كاتشب +3 كول سلو" ,img:"assets/food/family/9.jpg"},
-      { n: "سوبر فاميلي بوكس", p: 520, d: "13 قطعة (2 صدر + 3 فخد +3 دبوس + 3 جناح + 2 كيلة) +3 أرز +4 تومية +7 خبز + بطاطس + كاتشب +3 كول سلو + لتر كولا",img:"assets/food/family/13.jpg" },
-      { n: "بارتي بوكس", p: 750, d: "18 قطعة (4 صدر +4  فخد +4 دبوس +4 جناح + 2 كيلة) +3 أرز +4 تومية +9 خبز + بطاطس + كاتشب +4 كول سلو + لتر كولا" ,img:"assets/food/family/18.jpg"}
+      { n: "فاميلي بوكس", p: 420, d: "9 قطع (2صدر +2 فخد + 2 دبوس + 2 جناح + 1 كيلة) +2 أرز +3 تومية +5 خبز + بطاطس + كاتشب +3 كول سلو" ,img:"assets/food/family/9.jpg"},
+      { n: "سوبر فاميلي بوكس", p: 525, d: "13 قطعة (2 صدر + 3 فخد +3 دبوس + 3 جناح + 2 كيلة) +3 أرز +4 تومية +7 خبز + بطاطس + كاتشب +3 كول سلو + لتر كولا",img:"assets/food/family/13.jpg" },
+      { n: "بارتي بوكس", p: 775, d: "18 قطعة (4 صدر +4  فخد +4 دبوس +4 جناح + 2 كيلة) +3 أرز +4 تومية +9 خبز + بطاطس + كاتشب +4 كول سلو + لتر كولا" ,img:"assets/food/family/18.jpg"}
     ]
   },
   {
@@ -129,10 +129,10 @@ const MENU = [
     name: "وجبات استربس",
     icon: "strips",
     items: [
-      { n: "سناك استربس", p: 120, d: "3 قطع استربس +1 أرز + تومية +3 خبز + كاتشب",img:"assets/food/streps/1.jpg" },
-      { n: "بيج استربس", p: 230, d: "6 قطع استربس +1 أرز + بطاطس +2 تومية +5 خبز + كاتشب" ,img:"assets/food/streps/2.jpg"},
-      { n: "إكسترا استربس", p: 330, d: "9 قطع استربس +2 أرز + بطاطس +3 تومية +8 خبز + كاتشب" ,img:"assets/food/streps/3.jpg"},
-      { n: "فاميلي إكسترا", p: 420, d: "12 قطعة استربس +3 أرز + بطاطس +4 تومية +15 خبز + كاتشب", img:"assets/food/streps/4.jpg"}
+      { n: "سناك استربس", p: 130, d: "3 قطع استربس +1 أرز + تومية +3 خبز + كاتشب",img:"assets/food/streps/1.jpg" },
+      { n: "بيج استربس", p: 240, d: "6 قطع استربس +1 أرز + بطاطس +2 تومية +5 خبز + كاتشب" ,img:"assets/food/streps/2.jpg"},
+      { n: "إكسترا استربس", p: 350, d: "9 قطع استربس +2 أرز + بطاطس +3 تومية +8 خبز + كاتشب" ,img:"assets/food/streps/3.jpg"},
+      { n: "فاميلي إكسترا", p: 450, d: "12 قطعة استربس +3 أرز + بطاطس +4 تومية +15 خبز + كاتشب", img:"assets/food/streps/4.jpg"}
     ]
   },
   {
@@ -140,9 +140,9 @@ const MENU = [
     name: "وجبات الأطفال",
     icon: "kids",
     items: [
-      { n: " 1 جناح +  1 كيلة ", p: 65, d: "أرز + تومية + خبز + كاتشب + بطاطس " ,img:"assets/food/kids/1.jpg"},
-      { n: " 1 دبوس + 1 جناح + 1 كيلة", p: 90, d: "أرز + تومية + خبز + كاتشب + بطاطس" ,img:"assets/food/kids/2.jpg"},
-      { n: "4 أجنحة", p: 90, d: "أرز + تومية + خبز + كاتشب + بطاطس" ,img:"assets/food/kids/3.jpg"}
+      { n: " 1 جناح +  1 كيلة ", p: 70, d: "أرز + تومية + خبز + كاتشب + بطاطس " ,img:"assets/food/kids/1.jpg"},
+      { n: " 1 دبوس + 1 جناح + 1 كيلة", p: 100, d: "أرز + تومية + خبز + كاتشب + بطاطس" ,img:"assets/food/kids/2.jpg"},
+      { n: "4 أجنحة", p: 100, d: "أرز + تومية + خبز + كاتشب + بطاطس" ,img:"assets/food/kids/3.jpg"}
     ]
   },
   {
@@ -213,16 +213,16 @@ const MENU = [
     name: "بيتزا شرقى",
     icon: "pizza",
     items: [
-      { n: "لحمة", p: { L: 190, M: 150, S: 120 },img:"assets/food/pizzasharqi/meat.jpg" },
-      { n: "فراخ", p: { L: 190, M: 150, S: 120 },img:"assets/food/pizzasharqi/chicken.jpg" },
-      { n: "سجق", p: { L: 190, M: 150, S: 120 } ,img:"assets/food/pizzasharqi/sogk.jpg"},
-      { n: "سوسيس", p: { L: 190, M: 150, S: 120 } ,img:"assets/food/pizzasharqi/soses.jpg"},
-      { n: "بسطرمة", p: { L: 190, M: 150, S: 120 },img:"assets/food/pizzasharqi/bastrma.jpg" },
-      { n: "مشكل جبن", p: { L: 190, M: 150, S: 120 },img:"assets/food/pizzasharqi/mixgbn.jpg" },
-      { n: "مشكل لحوم", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/pizzasharqi/mixmeat.jpg"},
-      { n: "مشكل فراخ", p: { L: 200, M: 160, S: 130 },img:"assets/food/pizzasharqi/mixchicken.jpg" },
-      { n: "إيطاليانو", p: { L: 200, M: 160, S: 130 },img:"assets/food/pizzasharqi/itliano.jpg", d: "فور سيزون: لحمة، فراخ، سجق، سوسيس" },
-      { n: "برو ماكس", p: 250, tag: "عائلي",img:"assets/food/pizzasharqi/promax.jpg" }
+      { n: "لحمة", p: { L: 200, M: 160, S: 130 },img:"assets/food/pizzasharqi/meat.jpg" },
+      { n: "فراخ", p: { L: 200, M: 160, S: 130 },img:"assets/food/pizzasharqi/chicken.jpg" },
+      { n: "سجق", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/pizzasharqi/sogk.jpg"},
+      { n: "سوسيس", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/pizzasharqi/soses.jpg"},
+      { n: "بسطرمة", p: { L: 210, M: 170, S: 140 },img:"assets/food/pizzasharqi/bastrma.jpg" },
+      { n: "مشكل جبن", p: { L: 200, M: 160, S: 130 },img:"assets/food/pizzasharqi/mixgbn.jpg" },
+      { n: "مشكل لحوم", p: { L: 210, M: 170, S: 140 } ,img:"assets/food/pizzasharqi/mixmeat.jpg"},
+      { n: "مشكل فراخ", p: { L: 210, M: 170, S: 140 },img:"assets/food/pizzasharqi/mixchicken.jpg" },
+      { n: "إيطاليانو", p: { L: 210, M: 170, S: 140 },img:"assets/food/pizzasharqi/itliano.jpg", d: "فور سيزون: لحمة، فراخ، سجق، سوسيس" },
+      { n: "برو ماكس", p: 300, tag: "عائلي",img:"assets/food/pizzasharqi/promax.jpg" }
     ]
   },
   {
@@ -230,23 +230,23 @@ const MENU = [
     name: "فطير حادق",
     icon: "feteer",
     items: [
-      { n: "خضروات", p: { L: 130, M: 100, S: 90 },img:"assets/food/fateerr/khodar.jpg" },
+      { n: "خضروات", p: { L: 140, M: 110, S: 95 },img:"assets/food/fateerr/khodar.jpg" },
       { n: "جبنة رومي وبيض", p: { L: 150, M: 120, S: 100 },img:"assets/food/fateerr/egg&gbn.jpg" },
-      { n: "لحمة", p: { L: 180, M: 140, S: 110 },img:"assets/food/fateerr/meat.jpg" },
-      { n: "فراخ", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/chicken.jpg"},
-      { n: "بانيه كوكى", p: { L: 180, M: 140, S: 110 },img:"assets/food/fateerr/baneekoki.jpg" },
-      { n: "مشروم", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/mashrom.jpg"},
-      { n: "مشكل لحوم", p: { L: 190, M: 150, S: 120 } ,img:"assets/food/fateerr/mixmeat.jpg"},
-      { n: "مشكل فراخ", p: { L: 190, M: 150, S: 120 } ,img:"assets/food/fateerr/mixchicken.jpg"},
-      { n: "مشكل جبن", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/mixgbn.jpg"},
-      { n: "سجق", p: { L: 180, M: 140, S: 110 },img:"assets/food/fateerr/sogk.jpg" },
-      { n: "سوسيس", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/sosess.jpg"},
-      { n: "بانيه بلدى", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/baneebaldi.jpg"},
-      { n: "زنجر", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/zngr.jpg"},
-      { n: "بسطرمة", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/bastrma.jpg"},
-      { n: "تونة", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/tona.jpg"},
-      { n: "برجر", p: { L: 180, M: 140, S: 110 } ,img:"assets/food/fateerr/burger.jpg"},
-      { n: "إيطاليانو", p: { L: 200, M: 150, S: 130 },img:"assets/food/fateerr/itliano.jpg", d: "فور سيزون: لحمة، فراخ، سجق، سوسيس" }
+      { n: "لحمة", p: { L: 200, M: 150, S: 120 },img:"assets/food/fateerr/meat.jpg" },
+      { n: "فراخ", p: { L: 200, M: 150, S: 120 } ,img:"assets/food/fateerr/chicken.jpg"},
+      { n: "بانيه كوكى", p: { L: 200, M: 150, S: 120 },img:"assets/food/fateerr/baneekoki.jpg" },
+      { n: "مشروم", p: { L: 200, M: 150, S: 120 } ,img:"assets/food/fateerr/mashrom.jpg"},
+      { n: "مشكل لحوم", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/fateerr/mixmeat.jpg"},
+      { n: "مشكل فراخ", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/fateerr/mixchicken.jpg"},
+      { n: "مشكل جبن", p: { L: 200, M: 150, S: 120 } ,img:"assets/food/fateerr/mixgbn.jpg"},
+      { n: "سجق", p: { L: 200, M: 150, S: 120 },img:"assets/food/fateerr/sogk.jpg" },
+      { n: "سوسيس", p: { L: 200, M: 150, S: 120 } ,img:"assets/food/fateerr/sosess.jpg"},
+      { n: "بانيه بلدى", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/fateerr/baneebaldi.jpg"},
+      { n: "زنجر", p: { L: 200, M: 160, S: 130 } ,img:"assets/food/fateerr/zngr.jpg"},
+      { n: "بسطرمة", p: { L: 210, M: 160, S: 130 } ,img:"assets/food/fateerr/bastrma.jpg"},
+      { n: "تونة", p: { L: 200, M: 150, S: 120 } ,img:"assets/food/fateerr/tona.jpg"},
+      { n: "برجر", p: { L: 200, M: 150, S: 120 } ,img:"assets/food/fateerr/burger.jpg"},
+      { n: "إيطاليانو", p: { L: 210, M: 170, S: 140 },img:"assets/food/fateerr/itliano.jpg", d: "فور سيزون: لحمة، فراخ، سجق، سوسيس" }
     ]
   },
   {
@@ -272,14 +272,14 @@ const MENU = [
     name: "كلزونى",
     icon: "calzone",
     items: [
-      { n: "لحمة", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/meat.jpg"},
-      { n: "فراخ", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/chicken.jpg"},
-      { n: "كوردن بلو", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/cordnblo.jpg"},
-      { n: "ميجا", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/mega.jpg"},
-      { n: "سجق", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/sogk.jpg"},
-      { n: "سوسيس", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/soses.jpg"},
-      { n: "مكس لحوم", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/mixmeat.jpg"},
-      { n: "مكس فراخ", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/kalzony/mixchicken.jpg"}
+      { n: "لحمة", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/meat.jpg"},
+      { n: "فراخ", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/chicken.jpg"},
+      { n: "كوردن بلو", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/cordnblo.jpg"},
+      { n: "ميجا", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/mega.jpg"},
+      { n: "سجق", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/sogk.jpg"},
+      { n: "سوسيس", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/soses.jpg"},
+      { n: "مكس لحوم", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/mixmeat.jpg"},
+      { n: "مكس فراخ", p: { L: 170, M: 140, S: 120 } ,img:"assets/food/kalzony/mixchicken.jpg"}
     ]
   },
   {
@@ -287,16 +287,16 @@ const MENU = [
     name: "صاروخ رول",
     icon: "roll",
     items: [
-      { n: "لحمة", p: { L: 120, M: 100 },img:"assets/food/roll/meat.jpg" },
-      { n: "فراخ", p: { L: 120, M: 100 } ,img:"assets/food/roll/chicken.jpg"},
-      { n: "مكس جبن", p: { L: 120, M: 100 },img:"assets/food/roll/mixgbn.jpg" },
-      { n: "مكس لحوم", p: { L: 120, M: 100 } ,img:"assets/food/roll/mixmeat.jpg"},
-      { n: "مكس فراخ", p: { L: 120, M: 100 },img:"assets/food/roll/mixchicken.jpg" },
-      { n: "سجق", p: { L: 120, M: 100 } ,img:"assets/food/roll/sogk.jpg"},
-      { n: "سوسيس", p: { L: 120, M: 100 } ,img:"assets/food/roll/soses.jpg"},
-      { n: "زنجر", p: { L: 120, M: 100 } ,img:"assets/food/roll/zngr.jpg"},
-      { n: "بانيه بلدى", p: { L: 120, M: 100 },img:"assets/food/roll/banee.jpg" },
-      { n: "كفتة بلدي", p: { L: 120, M: 100 },img:"assets/food/roll/koftamafroma.jpg" }
+      { n: "لحمة", p: { L: 130, M: 110 },img:"assets/food/roll/meat.jpg" },
+      { n: "فراخ", p: { L: 130, M: 110 } ,img:"assets/food/roll/chicken.jpg"},
+      { n: "مكس جبن", p: { L: 130, M: 110 },img:"assets/food/roll/mixgbn.jpg" },
+      { n: "مكس لحوم", p: { L: 130, M: 110 } ,img:"assets/food/roll/mixmeat.jpg"},
+      { n: "مكس فراخ", p: { L: 130, M: 110 },img:"assets/food/roll/mixchicken.jpg" },
+      { n: "سجق", p: { L: 130, M: 110 } ,img:"assets/food/roll/sogk.jpg"},
+      { n: "سوسيس", p: { L: 130, M: 110 } ,img:"assets/food/roll/soses.jpg"},
+      { n: "زنجر", p: { L: 130, M: 110 } ,img:"assets/food/roll/zngr.jpg"},
+      { n: "بانيه بلدى", p: { L: 130, M: 110 },img:"assets/food/roll/banee.jpg" },
+      { n: "كفتة بلدي", p: { L: 130, M: 110 },img:"assets/food/roll/koftamafroma.jpg" }
     ]
   },
   {
@@ -304,10 +304,10 @@ const MENU = [
     name: "وجبات سورى",
     icon: "syrian",
     items: [
-      { n: "وجبة عربى", p: { L: 140, M: 110, S: 90 },img:"assets/food/wagbasory/3rby.jpg" },
-      { n: "فتة شاورما فراخ", p: { L: 150, M: 130, S: 100 },img:"assets/food/wagbasory/fata.jpg" },
-      { n: "وجبة زنجر", p: { L: 140, M: 120, S: 100 } ,img:"assets/food/wagbasory/zngr.jpg"},
-      { n: "وجبة بانيه", p: { L: 140, M: 120, S: 100 } ,img:"assets/food/wagbasory/banee.jpg"},
+      { n: "وجبة عربى", p: { L: 150, M: 120, S: 100 },img:"assets/food/wagbasory/3rby.jpg" },
+      { n: "فتة شاورما فراخ", p: { L: 170, M: 150, S: 120 },img:"assets/food/wagbasory/fata.jpg" },
+      { n: "وجبة زنجر", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/wagbasory/zngr.jpg"},
+      { n: "وجبة بانيه", p: { L: 150, M: 130, S: 110 } ,img:"assets/food/wagbasory/banee.jpg"},
       { n: "بوكس الأبطال", p: 400, tag: "عائلي",img:"assets/food/wagbasory/mix.jpg" }
     ]
   },
@@ -316,16 +316,16 @@ const MENU = [
     name: "سندوتشات إيطاليانو",
     icon: "sandwich",
     items: [
-      { n: "كوردن بلو زنجر", p: 75,img:"assets/food/sandwtchh/kordnbzngr.jpg" },
-      { n: "كوردن بلو برجر", p: 75 ,img:"assets/food/sandwtchh/kordonbb.jpg"},
-      { n: "برجر", p: 75,img:"assets/food/sandwtchh/burger.jpg" },
-      { n: "زنجر", p: 75,img:"assets/food/sandwtchh/zngr.jpg" },
-      { n: "كوردن بلو", p: 75 ,img:"assets/food/sandwtchh/kordnbl.jpg"},
-      { n: "استربس", p: 75,img:"assets/food/sandwtchh/streps.jpg" },
-      { n: "شاورما", p: 75,img:"assets/food/sandwtchh/shawrma.jpg" },
-      { n: "بانيه بلدى", p: 75 ,img:"assets/food/sandwtchh/banee.jpg"},
-      { n: "سوبر كرانشى", p: 75 ,img:"assets/food/sandwtchh/supercrnshy.jpg"},
-      { n: "إيطاليانو",d: "فراخ + لحمة + سجق + سوسيس" ,p: 75,img:"assets/food/sandwtchh/itliano.jpg" }
+      { n: "كوردن بلو زنجر", p: 80,img:"assets/food/sandwtchh/kordnbzngr.jpg" },
+      { n: "كوردن بلو برجر", p: 80 ,img:"assets/food/sandwtchh/kordonbb.jpg"},
+      { n: "برجر", p: 80,img:"assets/food/sandwtchh/burger.jpg" },
+      { n: "زنجر", p: 80,img:"assets/food/sandwtchh/zngr.jpg" },
+      { n: "كوردن بلو", p: 80 ,img:"assets/food/sandwtchh/kordnbl.jpg"},
+      { n: "استربس", p: 80,img:"assets/food/sandwtchh/streps.jpg" },
+      { n: "شاورما", p: 80,img:"assets/food/sandwtchh/shawrma.jpg" },
+      { n: "بانيه بلدى", p: 80 ,img:"assets/food/sandwtchh/banee.jpg"},
+      { n: "سوبر كرانشى", p: 80 ,img:"assets/food/sandwtchh/supercrnshy.jpg"},
+      { n: "إيطاليانو",d: "فراخ + لحمة + سجق + سوسيس" ,p: 80,img:"assets/food/sandwtchh/itliano.jpg" }
     ]
   },
   {
@@ -333,15 +333,15 @@ const MENU = [
     name: "سندوتشات سورى",
     icon: "sandwich",
     items: [
-      { n: "بطاطس", p: { L: 55, M: 45, S: 35 },img:"assets/food/shawrma/botato.jpg" },
+      { n: "بطاطس", p: { L: 60, M: 50, S: 40 },img:"assets/food/shawrma/botato.jpg" },
       { n: "شاورما", p: { L: 90, M: 80, S: 70 },img:"assets/food/shawrma/shawrma.jpg" },
       { n: "بانيه كوكى", p: { L: 80, M: 70, S: 60 },img:"assets/food/shawrma/baneek.jpg" },
-      { n: "كفتة", p: { L: 70, M: 60, S: 50 } ,img:"assets/food/shawrma/koftA.jpg"},
+      { n: "كفتة", p: { L: 80, M: 70, S: 60 } ,img:"assets/food/shawrma/koftA.jpg"},
       { n: "برجر", p: { L: 80, M: 70, S: 60 },img:"assets/food/shawrma/burger.jpg" },
-      { n: "زنجر", p: { L: 90, M: 80, S: 70 } ,img:"assets/food/shawrma/zngr.jpg"},
-      { n: "بانيه بلدى", p: { L: 90, M: 80, S: 70 },img:"assets/food/shawrma/banee.jpg" },
-      { n: "استربس", p: { L: 90, M: 80, S: 70 } ,img:"assets/food/shawrma/streps.jpg"},
-      { n: "شيش", p: { L: 90, M: 80, S: 70 } ,img:"assets/food/shawrma/shesh.jpg"},
+      { n: "زنجر", p: { L: 100, M: 90, S: 80 } ,img:"assets/food/shawrma/zngr.jpg"},
+      { n: "بانيه بلدى", p: { L: 100, M: 90, S: 80 },img:"assets/food/shawrma/banee.jpg" },
+      { n: "استربس", p: { L: 100, M: 90, S: 80 } ,img:"assets/food/shawrma/streps.jpg"},
+      { n: "شيش", p: { L: 100, M: 90, S: 80 } ,img:"assets/food/shawrma/shesh.jpg"},
       { n: "لحمة مفرومة", p: { L: 90, M: 80, S: 70 } ,img:"assets/food/shawrma/LA7MAmafroma.jpg"}
     ]
   },
@@ -350,11 +350,11 @@ const MENU = [
     name: "مكرونات",
     icon: "pasta",
     items: [
-      { n: "بشاميل لحمة", p: { L: 90, M: 70 } ,img:"assets/food/pasta/meat.jpg"},
-      { n: "بشاميل فراخ", p: { L: 90, M: 70 } ,img:"assets/food/pasta/chicken.jpg"},
-      { n: "نجرسكو", p: { L: 90, M: 70 },img:"assets/food/pasta/negrsko.jpg" },
-      { n: "باستا", p: { L: 110, M: 90 } ,img:"assets/food/pasta/pasta.jpg"},
-      { n: "ميكس", p: { L: 110, M: 90 } ,img:"assets/food/pasta/mix.jpg"}
+      { n: "بشاميل لحمة", p: { L: 100, M: 80 } ,img:"assets/food/pasta/meat.jpg"},
+      { n: "بشاميل فراخ", p: { L: 100, M: 80 } ,img:"assets/food/pasta/chicken.jpg"},
+      { n: "نجرسكو", p: { L: 100, M: 80 },img:"assets/food/pasta/negrsko.jpg" },
+      { n: "باستا", p: { L: 120, M: 100 } ,img:"assets/food/pasta/pasta.jpg"},
+      { n: "ميكس", p: { L: 120, M: 100 } ,img:"assets/food/pasta/mix.jpg"}
     ]
   },
   {
@@ -362,12 +362,12 @@ const MENU = [
     name: "الأرز البسمتى",
     icon: "rice",
     items: [
-      { n: "ريزو سادة", p: { L: 30, M: 15 },img:"assets/food/rice/sada.jpg" },
-      { n: "ريزو فراخ", p: { L: 90, M: 70 } ,img:"assets/food/rice/chicken.jpg"},
-      { n: "ريزو لحمة", p: { L: 90, M: 70 },img:"assets/food/rice/meat.jpg" },
-      { n: "ريزو بانيه كوكى", p: { L: 80, M: 60 },img:"assets/food/rice/baneekoki.jpg" },
-      { n: "ريزو بانيه بلدى", p: { L: 90, M: 70 },img:"assets/food/rice/baneeballdy.jpg" },
-      { n: "ريزو زنجر", p: { L: 90, M: 70 },img:"assets/food/rice/zngr.jpg" },
+      { n: "ريزو سادة", p: { L: 40, M: 30 },img:"assets/food/rice/sada.jpg" },
+      { n: "ريزو فراخ", p: { L: 100, M: 80 } ,img:"assets/food/rice/chicken.jpg"},
+      { n: "ريزو لحمة", p: { L: 100, M: 80 },img:"assets/food/rice/meat.jpg" },
+      { n: "ريزو بانيه كوكى", p: { L: 90, M: 70 },img:"assets/food/rice/baneekoki.jpg" },
+      { n: "ريزو بانيه بلدى", p: { L: 100, M: 80 },img:"assets/food/rice/baneeballdy.jpg" },
+      { n: "ريزو زنجر", p: { L: 100, M: 80 },img:"assets/food/rice/zngr.jpg" },
       { n: "ريزو ميكس فراخ", p: { L: 100, M: 80 },img:"assets/food/rice/mixchicken.jpg" }
     ]
   },
@@ -376,17 +376,17 @@ const MENU = [
     name: "الكريبات",
     icon: "crepe",
     items: [
-      { n: "كريب بطاطس", p: { L: 55, M: 45 } ,img:"assets/food/crepes/potato.jpg"},
-      { n: "كريب بانيه كوكى", p: { L: 70, M: 60 } ,img:"assets/food/crepes/banekoki.jpg"},
-      { n: "كريب مكس جبن", p: { L: 70, M: 60 } ,img:"assets/food/crepes/mixgbnn.jpg"},
-      { n: "كريب مشروم", p: { L: 90, M: 70 } ,img:"assets/food/crepes/mashrom.jpg"},
-      { n: "كريب شاورما", p: { L: 90, M: 70 } ,img:"assets/food/crepes/shawrma.jpg"},
-      { n: "كريب لحمة", p: { L: 90, M: 70 } ,img:"assets/food/crepes/meat.jpg"},
-      { n: "كريب كفتة", p: { L: 90, M: 70 } ,img:"assets/food/crepes/kofta.jpg"},
-      { n: "كريب برجر", p: { L: 90, M: 70 } ,img:"assets/food/crepes/burger.jpg"},
+      { n: "كريب بطاطس", p: { L: 60, M: 50 } ,img:"assets/food/crepes/potato.jpg"},
+      { n: "كريب بانيه كوكى", p: { L: 75, M: 65 } ,img:"assets/food/crepes/banekoki.jpg"},
+      { n: "كريب مكس جبن", p: { L: 80, M: 65 } ,img:"assets/food/crepes/mixgbnn.jpg"},
+      { n: "كريب مشروم", p: { L: 100, M: 80 } ,img:"assets/food/crepes/mashrom.jpg"},
+      { n: "كريب شاورما", p: { L: 100, M: 80 } ,img:"assets/food/crepes/shawrma.jpg"},
+      { n: "كريب لحمة", p: { L: 100, M: 80 } ,img:"assets/food/crepes/meat.jpg"},
+      { n: "كريب كفتة", p: { L: 100, M: 80 } ,img:"assets/food/crepes/kofta.jpg"},
+      { n: "كريب برجر", p: { L: 100, M: 80 } ,img:"assets/food/crepes/burger.jpg"},
       { n: "كريب كبدة", p: { L: 90, M: 70 } ,img:"assets/food/crepes/kebda.jpg"},
-      { n: "كريب سجق", p: { L: 90, M: 70 } ,img:"assets/food/crepes/sogk.jpg"},
-      { n: "كريب سوسيس", p: { L: 90, M: 70 },img:"assets/food/crepes/sosess.jpg" },
+      { n: "كريب سجق", p: { L: 100, M: 80 } ,img:"assets/food/crepes/sogk.jpg"},
+      { n: "كريب سوسيس", p: { L: 100, M: 80 },img:"assets/food/crepes/sosess.jpg" },
       { n: "كريب بانيه بلدى", p: { L: 100, M: 80 } ,img:"assets/food/crepes/banebaldi.jpg"},
       { n: "كريب زنجر", p: { L: 100, M: 80 },img:"assets/food/crepes/zengr.jpg" },
       { n: "كريب شيش", p: { L: 120, M: 100 },img:"assets/food/crepes/shesh.jpg" },
