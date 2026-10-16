@@ -29,7 +29,7 @@ function renderCartPage(){
     workspace.innerHTML = `
       <div class="empty-state">
         ${iconSvg("empty")}
-        <h3>السلة فاضية دلوقتي</h3>
+        <h3>السلة فارغة </h3>
         <p>يلا نبدأ نختار من منيو إيطاليانو</p>
         <a href="menu.html" class="btn btn-primary">تصفح المنيو</a>
       </div>`;
